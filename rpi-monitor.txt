@@ -1,0 +1,10 @@
+docker run -d -p 8888:8888 \
+--name rpi-monitor \
+--restart always \
+-v /opt/vc:/opt/vc \
+-v /boot:/boot \
+-v /sys:/dockerhost/sys:ro \
+-v /etc:/dockerhost/etc:ro \
+-v /proc:/dockerhost/proc:ro \
+-v /usr/lib:/dockerhost/usr/lib:ro \
+michaelmiklis/rpi-monitor:latest

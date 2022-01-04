@@ -1,0 +1,5 @@
+docker run -d -p 3001:3001 \
+--restart always \
+--name uptime_kuma \
+-v /docker/uptime-kuma:/app/data \
+louislam/uptime-kuma

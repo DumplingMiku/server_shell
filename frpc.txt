@@ -1,0 +1,5 @@
+docker run -d \
+--name frpc \
+--restart=always \
+-v /docker/frp/frpc.ini:/etc/frp/frpc.ini \
+snowdreamtech/frpc
